@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <!--Firebase Links-->
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+        <!--Bootstrap link-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!--Title-->
+        <title>Messaging App</title>
+    </head>
+    <body>
+        <div class="col-sm-2 sidenav" style="height: 642px; background-color: rgb(211, 209, 209);">
+            <h2>Messaging App</h2>
+        </div>
+        <div class="container-fluid text-center"> 
+            <div class="row-content">
+                <div class="col-sm-8 text-left">
+                    <h2 style="padding-top: 2px;padding-bottom: 2px;">Login...</h2>
+                    <input id="wasd" class="form-control" placeholder="UID" id="input">
+                    <div style="display: inline-block; width: 80%;" >
+                        <button class="btn btn-success" onclick="loginuid();" style="margin-top: 15px;margin-bottom: 15px; margin-right: 5px;">Login</button>
+                        or...
+                        <button class="btn btn-primary" style="margin-left: 5px;" onclick="setuid();">Create UID</button>
+                        <div id="output"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="container-fluid text-center" style="padding-top: 30px; padding-bottom: 20px;">
+            <h4>Note :- These messages are stored at <a style="color: orange;" href="https://firebase.google.com/">Google Firebase</a> manufactured by Google..</h4>
+          </footer>
+    </body>
+    <script src="main.js"></script>
+</html>
